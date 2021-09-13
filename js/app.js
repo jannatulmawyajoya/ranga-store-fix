@@ -17,7 +17,7 @@ const showProducts = (products) => {
       <h5>${product.title}</h5>
       
       <p>Category: ${product.category}</p>
-      <p>Ratings: ${product.rating.rate}</p>
+      <p class="icons"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></br><span class="rating">${product.rating.rate}</span></p>
       <p>Total Ratings: ${product.rating.count}</p>
       <h4>Price:  ${product.price}</h4>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now ">Add to cart</button>
@@ -26,6 +26,8 @@ const showProducts = (products) => {
     document.getElementById("all-products").appendChild(div);
   }
 };
+
+// my cart calculation part
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;

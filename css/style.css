@@ -1,8 +1,21 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  
 }
- #total-Products{
+.body{
+  background-color: whitesmoke;
+  /* background-color: wheat; */
+  
+}
+
+#total-Products {
+  color: black;
+}
+.icons{
+  color: orange;
+}
+.rating{
   color: black;
 }
 h2{
@@ -41,6 +54,10 @@ h2{
   margin: auto;
   align-items: center;
   justify-content: center;
+ 
+}
+#my-cart{
+  background-color: white;
 }
 .single-product {
   padding: 10px;
@@ -49,17 +66,19 @@ h2{
   /* border: 1px solid black; */
   height: 480px;
   box-shadow: 12px 5px 5px gainsboro;
-  /* background-color: gray; */
- 
+  background-color: white;
+
 
  
 }
-.single-product .buy-now{
+
+.buy-now-btn,.single-product .buy-now{
   background-color: orangered;
   color: white;
   border: none;
   padding: 6px;
   border-radius: 5px;
+  
 }
 .single-product #details-btn{
   background-color: #808080;
@@ -67,6 +86,7 @@ h2{
   border-radius: 5px;
   border: none;
   color: white;
+  
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
@@ -100,7 +120,7 @@ h2{
     width: 300px;
     /* border: 1px solid green; */
     padding: 10px;
-    box-shadow: 10px 10px 20px gray;
+    box-shadow: 10px 10px 20px grey;
     border-radius: 5px;
     margin-right: 30px;
     position: fixed;
@@ -110,12 +130,13 @@ h2{
   }
 }
 
-.product{
+/* .product{
   height: 100%;
-}
+} */
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
